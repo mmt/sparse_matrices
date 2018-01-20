@@ -36,7 +36,7 @@ TEST(CsFind, TestAsh219) {
         }
 
         Eigen::SparseMatrix<double> eigenT = eigen_util::CsToEigen(T);
-        Eigen::SparseMatrix<double> eigenS = eigen_util::CsToEigen(T);
+        Eigen::SparseMatrix<double> eigenS = eigen_util::CsToEigen(S);
 
         EXPECT_TRUE(eigenT.isApprox(eigenS, 0.0));
 
